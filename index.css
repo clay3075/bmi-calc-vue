@@ -1,0 +1,89 @@
+.smiley {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+}
+.smiley .eye {
+	height: 12px;
+	width: 12px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+    position: absolute;
+    background-color: black;
+}
+.left-eye {
+	top: 20px;
+	left: 30px;
+}
+.right-eye {
+	top: 20px;
+	right: 30px;
+}
+.mouth {
+	height: 25px;
+	background-color: transparent;
+	position: absolute;
+	width: 50px;
+	left: 25px;
+	top: 55px;
+	
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 10vh;
+}
+
+input {
+    text-align: center;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    margin: 5vh auto;
+    padding: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+body {
+    background-color: black;
+    margin: 0 auto;
+}
+
+#inputs {
+    flex: 1;
+    padding-bottom: 1%;
+}
+
+#output {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bmi {
+    font-size: 18px;
+    padding-bottom: 15%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin: 5px;
+}

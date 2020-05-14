@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI Calculator</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <h1>BMI Calculator</h1>
+        <div id="app">
+            <div id="inputs">
+                <div class="input-group">
+                    <label for="height">Height (inches)</label>
+                    <input @change="updateBMI" step="0.1" type="number" id="height" v-model:value="height"/>
+                </div>
+                <div class="input-group">
+                    <label for="weight">Weight (lbs)</label>
+                    <input @change="updateBMI" step="0.1" type="number" id="weight" v-model:value="weight"/>
+                </div>
+            </div>
+            <div id="output">
+                <div id="bmi"><b>BMI: </b> {{bmi}}</div>
+                <div class="smiley" v-bind:style="{ backgroundColor: smileyColor }">
+                    <div class="left-eye eye">&nbsp;</div>
+                    <div class="right-eye eye">&nbsp;</div>
+                    <canvas id="mouth" class="mouth"></canvas>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
